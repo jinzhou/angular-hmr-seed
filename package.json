@@ -1,0 +1,33 @@
+{
+   "name": "cafmlpassword",
+   "scripts": {
+      "clean": "rm -rf ./dist",
+      "chmod": "chmod -R 777 ./node_modules",
+      "copy:webinf": "cp -avr ./WEB-INF ./dist",
+      "build": "webpack",
+      "serve": "webpack-dev-server --inline --hot"
+   },
+   "devDependencies": {
+      "css-loader": "^0.26.1",
+      "file-loader": "^0.9.0",
+      "generator-angular-ui-router": "^0.5.3",
+      "html-loader": "^0.4.4",
+      "html-webpack-plugin": "^2.26.0",
+      "less": "^2.7.2",
+      "less-loader": "^2.2.3",
+      "raw-loader": "^0.5.1",
+      "reload-html-webpack-plugin": "^0.1.2",
+      "style-loader": "^0.13.1",
+      "webpack": "^1.14.0",
+      "webpack-dashboard": "^0.2.1",
+      "webpack-dev-server": "^1.16.2",
+      "yo": "^1.8.5"
+   },
+   "dependencies": {
+      "angular": "^1.5.0",
+      "angular-animate": "^1.6.1",
+      "angular-ui-router": "^0.4.2",
+      "angular-webpack-hmr": "^1.0.1",
+      "jquery": "^3.1.1"
+   }
+}
